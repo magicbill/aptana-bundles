@@ -1,7 +1,7 @@
 <!--
 	category: CONCRETE5 Snippet
-	name: FormHelper checkbox
-	toolTip: FormHelper checkbox
+	name: FormHelper textarea
+	toolTip: FormHelper textarea
 -->
 
 $form = Loader::load('form');
@@ -10,4 +10,5 @@ $form = Loader::load('form');
 //$value		= value attribute, 
 //$checked		= checked attribute, 
 //$miscFields	= another attributes, 
-$form->textarea("comment", "0", true, array("tabindex" => "0"));
+$form->checkbox$form = Loader::load('form');
+$form->textarea("comment", "dummy text.", array("tabindex" => "0"));("comment", "0", true, array("tabindex" => "0"));
