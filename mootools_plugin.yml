@@ -1,0 +1,12 @@
+<!--
+	category: YAML Snippet
+	name: Mootools Plugin
+	toolTip: Mootools plugin
+-->
+name: ${name}
+author: ${author}
+category: ${category}
+tags: ${tags}
+#docs: http://url.to.docs
+#demo: http://url.to.demo
+current: 0.1
