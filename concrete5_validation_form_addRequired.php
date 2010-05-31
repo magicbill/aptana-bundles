@@ -1,5 +1,5 @@
 <!--
-	category: CONCRETE5 Snippet
+	category: CONCRETE5
 	name: ValidationFormHelper addRequired
 	toolTip: ValidationFormHelper addRequired
 -->

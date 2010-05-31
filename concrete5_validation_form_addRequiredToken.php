@@ -1,5 +1,5 @@
 <!--
-	category: CONCRETE5 Snippet
+	category: CONCRETE5
 	name: ValidationFormHelper addRequiredToken
 	toolTip: ValidationFormHelper addRequiredToken
 -->

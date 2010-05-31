@@ -1,5 +1,5 @@
 <!--
-	category: CONCRETE5 Snippet
+	category: CONCRETE5
 	name: FormHelper password
 	toolTip: FormHelper password
 -->
