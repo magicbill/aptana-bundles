@@ -1,0 +1,51 @@
+/*
+	category: CSS
+	name: Flow Breadcrumb
+	toolTip: Flow Breadcrumb
+*/
+
+.flowBreadcrumb {
+	overflow: hidden;
+}
+
+.flowBreadcrumb li {
+	font-size: 108%;
+	float: left;
+	margin-right: 1px;
+	padding: 0px;
+}
+
+.flowBreadcrumb li a {
+	display: block;
+	background: #467fb1;
+	color: #ffffff;
+	text-align: center;
+	padding: 10px 10px;
+	margin-bottom: 1px;
+}
+
+.flowBreadcrumb li a:hover {
+	background: #f09d00;
+}
+
+.flowBreadcrumb li ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.flowBreadcrumb li li {
+	font-size: 93%;
+	margin-right: 1px;
+}
+
+.flowBreadcrumb li .last {
+	margin-right: 0px;
+}
+
+.flowBreadcrumb li li a {
+	display: block;
+	background: #467fb1;
+	color: #ffffff;
+	text-align: center;
+	padding: 5px 10px;
+}
