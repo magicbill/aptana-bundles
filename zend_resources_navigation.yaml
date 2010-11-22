@@ -1,0 +1,28 @@
+<!--
+    category: Zend Framework
+    name: Navigation - Yaml
+    toolTip: Navigation - Yaml
+-->
+production:
+  resources:
+    navigation:
+      pages:
+        home:
+          type: Zend_Navigation_Page_Mvc
+          label: Dashbord
+          title: Dashbord
+          route: core
+          module: core
+          controller: index
+          action: index
+          resource: core
+            pages:
+              lease:
+                type: Zend_Navigation_Page_Mvc
+                label: Module Example
+                title: Module Example
+                route: example
+                module: example
+                controller: index
+                action: index
+                resource: example

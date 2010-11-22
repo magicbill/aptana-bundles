@@ -1,0 +1,23 @@
+<!--
+    category: Zend Framework
+    name: Route - Yaml
+    toolTip: Route - Yaml
+-->
+production:
+  resources:
+    router:
+      routes:
+        home:
+          type: Zend_Controller_Router_Route_Static
+          route: /
+          defaults:
+            module: core
+            controller: index
+            action: index
+        widget:
+          type: Zend_Controller_Router_Route_Static
+          route: /widget/
+          defaults:
+            module: widget
+            controller: index
+            action: index

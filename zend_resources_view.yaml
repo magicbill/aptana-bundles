@@ -1,0 +1,12 @@
+<!--
+    category: Zend Framework
+    name: Database - Yaml
+    toolTip: Database - Yaml
+-->
+production:
+  resources:
+    view:
+      encoding: UTF-8
+    layout:
+      layout: layout
+      layoutPath: APPLICATION_PATH/scripts/layouts

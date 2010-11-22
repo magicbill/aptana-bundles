@@ -1,0 +1,15 @@
+<!--
+    category: Zend Framework
+    name: Database - Yaml
+    toolTip: Database - Yaml
+-->
+production:
+  resources:
+    db:
+      adapter: pdo_pgsql
+      params:
+        dbname: example
+        host: example
+        username: example
+        password: example
+      isDefaultTableAdapter: true
