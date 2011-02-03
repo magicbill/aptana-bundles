@@ -1,7 +1,7 @@
 /*
-	category: JS
-	name: Mootools Meio.Mask - Email
-	toolTip: Mootools Meio.Mask - Email
+	category: Mootools
+	name: Meio.Mask - Email
+	toolTip: Meio.Mask - Email
 */
 input = $("email");
 input.meiomask("regexp.email");

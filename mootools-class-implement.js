@@ -1,7 +1,7 @@
 /*
-	category: JS
-	name: Mootools class implement
-	toolTip: Mootools class implement
+	category: Mootools
+	name: Class implement
+	toolTip: Class implement
 */
 ${name}.implement({
 

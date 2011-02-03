@@ -1,7 +1,7 @@
 /*
-	category: JS
-	name: Mootools Class
-	toolTip: Mootools Class
+	category: Mootools
+	name: Class
+	toolTip: Class
 */
 var ${name} = new Class({
 

@@ -1,6 +1,6 @@
 /*
-	category: JS
-	name: Mootools load method
-	toolTip: Mootools load method
+	category: Mootools
+	name: load method
+	toolTip: load method
 */
 $$(${element}).load(${url});

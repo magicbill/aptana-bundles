@@ -1,7 +1,7 @@
 /*
-	category: JS
-	name: jQuery.load
-	toolTip: jQuery.load
+	category: jQuery
+	name: load
+	toolTip: load
 */
 
 var values = {

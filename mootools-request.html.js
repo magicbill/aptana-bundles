@@ -1,7 +1,7 @@
 /*
-	category: JS
-	name: Mootools Request.HTML
-	toolTip: Mootools Request.HTML
+	category: Mootools
+	name: Request.HTML
+	toolTip: Request.HTML
 */
 var request = new Request.HTML({
 	"url": ${url},

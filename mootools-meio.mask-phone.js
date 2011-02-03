@@ -1,7 +1,7 @@
 /*
-	category: JS
-	name: Mootools Meio.Mask - Phone
-	toolTip: Mootools Meio.Mask - Phone
+	category: Mootools
+	name: Meio.Mask - Phone
+	toolTip: Meio.Mask - Phone
 */
 input = $("phone");
 input.meiomask("fixed.phone");

@@ -1,7 +1,7 @@
 /*
-	category: JS
-	name: Mootools Meio.Mask - Dollar
-	toolTip: Mootools Meio.Mask - Dollar
+	category: Mootools
+	name: Meio.Mask - Dollar
+	toolTip: Meio.Mask - Dollar
 */
 input = $("dollar");
 input.meiomask("reverse.dollar");

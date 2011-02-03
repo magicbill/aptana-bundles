@@ -1,7 +1,7 @@
 /*
-	category: JS
-	name: Mootools Meio.Mask - Integer
-	toolTip: Mootools Meio.Mask - Integer
+	category: Mootools
+	name: Meio.Mask - Integer
+	toolTip: Meio.Mask - Integer
 */
 input = $("cc");
 input.meiomask("reverse.integer");

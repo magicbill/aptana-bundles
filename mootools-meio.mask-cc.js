@@ -1,7 +1,7 @@
 /*
-	category: JS
-	name: Mootools Meio.Mask - Credit Card Numbder
-	toolTip: Mootools Meio.Mask - Credit Card Numbder
+	category: Mootools
+	name: Meio.Mask - Credit Card Numbder
+	toolTip: Meio.Mask - Credit Card Numbder
 */
 input = $("cc");
 input.meiomask("fixed.cc");

@@ -1,7 +1,7 @@
 /*
-	category: JS
-	name: jQuery.post
-	toolTip: jQuery.post
+	category: jQuery
+	name: post
+	toolTip: post
 */
 
 var values = {

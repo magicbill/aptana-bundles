@@ -1,7 +1,7 @@
 /*
-	category: JS
-	name: Mootools Meio.Mask - Time
-	toolTip: Mootools Meio.Mask - Time
+	category: Mootools
+	name: Meio.Mask - Time
+	toolTip: Meio.Mask - Time
 */
 input = $("time");
 input.meiomask("fixed.time");

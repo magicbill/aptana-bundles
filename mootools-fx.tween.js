@@ -1,7 +1,7 @@
 /*
-	category: JS
-	name: Mootools Fx.Tween
-	toolTip: Mootools Fx.Tween
+	category: Mootools
+	name: Fx.Tween
+	toolTip: Fx.Tween
 */
 var fx = new Fx.Tween(${element}, {
 	"link": "chain",

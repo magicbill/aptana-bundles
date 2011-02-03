@@ -1,7 +1,7 @@
 /*
-	category: JS
-	name: Mootools Live Event
-	toolTip: Mootools Live Event
+	category: Mootools
+	name: Live Event
+	toolTip: Live Event
 */
 
 /*

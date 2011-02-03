@@ -1,7 +1,7 @@
 <!--
-    category: Zend Framework
-    name: Log - Yaml
-    toolTip: Log - Yaml
+    category: Zend Configuration By Yaml
+    name: Log
+    toolTip: Log
 -->
 production:
   resources:

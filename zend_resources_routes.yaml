@@ -1,7 +1,7 @@
 <!--
-    category: Zend Framework
-    name: Route - Yaml
-    toolTip: Route - Yaml
+    category: Zend Configuration By Yaml
+    name: Route
+    toolTip: Route
 -->
 production:
   resources:

@@ -1,7 +1,7 @@
 /*
-	category: JS
-	name: Mootools Fx.Morph
-	toolTip: Mootools Fx.Morph
+	category: Mootools
+	name: Fx.Morph
+	toolTip: Fx.Morph
 */
 
 var fx = new Fx.Morph(${element}, {

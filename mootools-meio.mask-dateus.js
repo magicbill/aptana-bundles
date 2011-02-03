@@ -1,7 +1,7 @@
 /*
-	category: JS
-	name: Mootools Meio.Mask - DateUs
-	toolTip: Mootools Meio.Mask - DateUs
+	category: Mootools
+	name: Meio.Mask - DateUs
+	toolTip: Meio.Mask - DateUs
 */
 input = $("dateus");
 input.meiomask("fixed.dateus");

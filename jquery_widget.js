@@ -1,7 +1,7 @@
 /*
-	category: JS
-	name: jQuery.ui.widget
-	toolTip: jQuery.ui.widget
+	category: jQuery
+	name: ui.widget
+	toolTip: ui.widget
 */
 (function($){
 

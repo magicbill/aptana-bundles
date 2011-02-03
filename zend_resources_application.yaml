@@ -1,7 +1,7 @@
 <!--
-    category: Zend Framework
-    name: Application - Yaml
-    toolTip: Application - Yaml
+    category: Zend Configuration By Yaml
+    name: Application
+    toolTip: Application
 -->
 production:
   phpSettings:

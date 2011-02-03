@@ -1,7 +1,7 @@
 <!--
-    category: Zend Framework
-    name: Database - Yaml
-    toolTip: Database - Yaml
+    category: Zend Configuration By Yaml
+    name: Database
+    toolTip: Database
 -->
 production:
   resources:

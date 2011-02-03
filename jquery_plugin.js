@@ -1,7 +1,7 @@
 /*
-	category: JS
-	name: jQuery.fn.plugin
-	toolTip: jQuery.fn.plugin
+	category: jQuery
+	name: fn.plugin
+	toolTip: fn.plugin
 */
 (function($){
 

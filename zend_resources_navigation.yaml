@@ -1,7 +1,7 @@
 <!--
-    category: Zend Framework
-    name: Navigation - Yaml
-    toolTip: Navigation - Yaml
+    category: Zend Configuration By Yaml
+    name: Navigation
+    toolTip: Navigation
 -->
 production:
   resources:
