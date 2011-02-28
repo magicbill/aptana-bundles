@@ -4,6 +4,6 @@
 	toolTip: Zend_Form Textarea Element
 -->
 $body = new Zend_Form_Element_Textarea('body');
-$body->setLable('body')
+$body->setLabel('body')
 	->setRequired()
 	->setValue();

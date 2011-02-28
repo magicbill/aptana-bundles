@@ -5,6 +5,6 @@
 -->
 
 $name = new Zend_Form_Element_Text('name');
-$name->setLable('name')
+$name->setLabel('name')
 	->setRequired()
 	->setValue();
