@@ -4,6 +4,8 @@ require 'ruble'
 # Wordpress Template Tags
 #================================================================
 
+with_defaults :scope => 'source.php source.php.embedded.block.html' do
+
 # get_header
 #----------------------------------------------------------------
 
@@ -233,5 +235,8 @@ snippet "have_posts()" do |snip|
 
 <?php endif; ?>
 END
+
+end
+
 
 end

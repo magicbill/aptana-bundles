@@ -4,7 +4,7 @@ require 'ruble'
 # Template Syntax
 #=======================================
 
-with_defaults :scope => 'source.php source.php.embedded.block.html' do
+with_defaults :scope => 'text.html source.php.embedded.block.html' do
 
 # Block
 #---------------------------------------
