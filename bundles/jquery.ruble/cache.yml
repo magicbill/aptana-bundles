@@ -1,0 +1,1061 @@
+!!com.aptana.scripting.model.BundleElement
+author: Noritaka Horio<holy.shared.design@gmail.com>
+children:
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.addClass]
+  displayName: $(...).addClass(class)
+  expansion: '.addClass(''${1:class name}'')
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.hasClass]
+  displayName: $(...).hasClass(class)
+  expansion: '.hasClass(''${1:class name}'')
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.attr]
+  displayName: $(...).attr(name)
+  expansion: '.attr(''${1:name}'')
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.attr]
+  displayName: $(...).attr(name, value)
+  expansion: '.attr(''${1:name}'', ''${2:value}'')
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.removeAttr]
+  displayName: $(...).removeAttr(name)
+  expansion: '.removeAttr(''${1:name}'')
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.removeClass]
+  displayName: $(...).removeClass(name)
+  expansion: '.removeClass(''${1:name}'')
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.toggleClass]
+  displayName: $(...).toggleClass(name)
+  expansion: '.toggleClass(''${1:name}'')
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.html]
+  displayName: $(...).html()
+  expansion: '.html()
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.html]
+  displayName: $(...).html(value)
+  expansion: '.html(''${1:value}'')
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.val]
+  displayName: $(...).val()
+  expansion: '.val()
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.val]
+  displayName: $(...).val(value)
+  expansion: '.val(''${1:value}'')
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.css]
+  displayName: $(...).css(name, value)
+  expansion: '.css(''${1:name}'', ''${2:value}'')
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.css]
+  displayName: $(...).css(name)
+  expansion: '.css(''${1:name}'')
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.css]
+  displayName: $(...).css(map)
+  expansion: ".css({\n    '${1:name}': '${2:value}'\n})\n"
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.height]
+  displayName: $(...).height(value)
+  expansion: '.height(${1value})
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.height]
+  displayName: $(...).height()
+  expansion: '.height()
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.width]
+  displayName: $(...).width(value)
+  expansion: '.width(${1value})
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.width]
+  displayName: $(...).width()
+  expansion: '.width()
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.innerHeight]
+  displayName: $(...).innerHeight()
+  expansion: '.innerHeight()
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.innerWidth]
+  displayName: $(...).innerWidth()
+  expansion: '.innerWidth()
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.offset]
+  displayName: $(...).offset()
+  expansion: '.offset()
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.offset]
+  displayName: $(...).offset(map)
+  expansion: ".offset({\n    '${1:name}': '${2:value}'\n})\n"
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.outerHeight]
+  displayName: $(...).outerHeight()
+  expansion: '.outerHeight()
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.outerWidth]
+  displayName: $(...).outerWidth()
+  expansion: '.outerWidth()
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.position]
+  displayName: $(...).position()
+  expansion: '.position()
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.scrollLeft]
+  displayName: $(...).scrollLeft()
+  expansion: '.scrollLeft()
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.scrollTop]
+  displayName: $(...).scrollTop()
+  expansion: '.scrollTop()
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.after]
+  displayName: $(...).after(value)
+  expansion: '.after(${1:value})
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.append]
+  displayName: $(...).append(value)
+  expansion: '.append(${1:value})
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.appendTo]
+  displayName: $(...).appendTo(value)
+  expansion: '.appendTo(${1:value})
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.before]
+  displayName: $(...).before(value)
+  expansion: '.before(${1:value})
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.clone]
+  displayName: $(...).clone()
+  expansion: '.clone()
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.detach]
+  displayName: $(...).detach()
+  expansion: '.detach()
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.empty]
+  displayName: $(...).empty()
+  expansion: '.empty()
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.insertAfter]
+  displayName: $(...).insertAfter(value)
+  expansion: '.insertAfter(${1:value})
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.insertBefore]
+  displayName: $(...).insertBefore(value)
+  expansion: '.insertBefore(${1:value})
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.prepend]
+  displayName: $(...).prepend(value)
+  expansion: '.prepend(${1:value})
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.prependTo]
+  displayName: $(...).prependTo(value)
+  expansion: '.prependTo(${1:value})
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.remove]
+  displayName: $(...).remove()
+  expansion: '.remove()
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.replaceAll]
+  displayName: $(...).replaceAll(target)
+  expansion: '.replaceAll(${1:target})
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.replaceWith]
+  displayName: $(...).replaceWith(values)
+  expansion: '.replaceWith(${1:values})
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.text]
+  displayName: $(...).text()
+  expansion: '.text()
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.text]
+  displayName: $(...).text(value)
+  expansion: '.text(${1:value})
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.unwrap]
+  displayName: $(...).unwrap()
+  expansion: '.unwrap()
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.wrap]
+  displayName: $(...).wrap(value)
+  expansion: '.wrap(${1:value})
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.fadeIn]
+  displayName: $(...).fadeIn(duration, easing, callback)
+  expansion: '.fadeIn(${1:duration}, ${2:easing}, ${3:callback})
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.fadeOut]
+  displayName: $(...).fadeOut(duration, easing, callback)
+  expansion: '.fadeOut(${1:duration}, ${2:easing}, ${3:callback})
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.fadeTo]
+  displayName: $(...).fadeTo(duration, opacity, callback)
+  expansion: '.fadeTo(${1:duration}, ${2:opacity}, ${3:callback})
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.fadeToggle]
+  displayName: $(...).fadeToggle(duration, easing, callback)
+  expansion: '.fadeToggle(${1:duration}, ${2:easing}, ${3:callback})
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.hide]
+  displayName: $(...).hide(duration, callback)
+  expansion: '.hide(${1:duration}, ${2:easing}, ${3:callback})
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.show]
+  displayName: $(...).show(duration, easing, callback)
+  expansion: '.show(${1:duration}, ${2:easing}, ${3:callback})
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.slideUp]
+  displayName: $(...).slideUp(duration, easing, callback)
+  expansion: '.slideUp(${1:duration}, ${2:easing}, ${3:callback})
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.slideDown]
+  displayName: $(...).slideDown(duration, easing, callback)
+  expansion: '.slideDown(${1:duration}, ${2:easing}, ${3:callback})
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.stop]
+  displayName: $(...).stop()
+  expansion: '.stop()
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.slideToggle]
+  displayName: $(...).slideToggle()
+  expansion: '.slideToggle(${1:duration}, ${2:easing}, ${3:callback})
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.animate]
+  displayName: $(...).animate(properties, duration, easing, complete)
+  expansion: '.animate(${1:properties}, ${2:duration}, ${3:easing}, ${4:complete})
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.get]
+  displayName: $(...).get(opts)
+  expansion: ".get({\n    url: ${1:url}\n    data: ${2:data}\n    success: function(${3:data},\
+    \ ${4:textStatus}, ${5:jqXHR}){\n    }\n    dataType: ${6:dataType}\n})\n"
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.set]
+  displayName: $(...).set(opts)
+  expansion: ".set({\n    url: ${1:url}\n    data: ${2:data}\n    success: function(${3:data},\
+    \ ${4:textStatus}, ${5:jqXHR}){\n    }\n    dataType: ${6:dataType}\n})\n"
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.load]
+  displayName: $(...).load(opts)
+  expansion: ".load({\n    url: ${1:url},\n    data: ${2:data},\n    complete: function(${3:data},\
+    \ ${4:textStatus}, ${5:jqXHR}){\n    }\n})\n"
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.getJSON]
+  displayName: $(...).getJSON(opts)
+  expansion: ".getJSON({\n    url: ${1:url},\n    data: ${2:data},\n    success: function(${3:data},\
+    \ ${4:textStatus}, ${5:jqXHR}){\n    }\n})\n"
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.draggable]
+  displayName: $(...).draggable(opts)
+  expansion: ".draggable({\n    handle: ${1:handle},\n    helper: ${2:helper}\n});\n"
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [.droppable]
+  displayName: $(...).droppable(opts)
+  expansion: ".droppable({\n    activeClass: ${1:activeClass},\n    addClasses: ${2:addClasses},\n\
+    \    hoverClass: ${3:hoverClass},\n    scope: ${4:scope}\n});\n"
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.js
+  workingDirectoryType: UNDEFINED
+copyright: Copyright 2010-2011 Noritaka Horio All rights reserved.
+customProperties: null
+decreaseIndentMarkers: &id001 {}
+description: ''
+displayName: jQuery
+fileTypeRegistry: *id001
+fileTypes: []
+foldingStartMarkers: *id001
+foldingStopMarkers: *id001
+increaseIndentMarkers: *id001
+license: null
+licenseUrl: null
+path: bundle.rb
+repository: http://sharedhat.com
+visible: true

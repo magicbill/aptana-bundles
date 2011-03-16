@@ -1,0 +1,238 @@
+!!com.aptana.scripting.model.BundleElement
+author: Noritka Horio<holy.share.design@gmail.com>
+children:
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['doo:block']
+  displayName: <!-- block:(...)
+  expansion: '<!-- block:${0:BlockName} -->
+
+    <h3>${1:BlockTitle}</h3>
+
+    <p>${2:BlockContent}</p>
+
+    <!-- endblock -->
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['doo:comment']
+  displayName: '{# comment #}'
+  expansion: '{# ${0:Comment Text} #}
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['doo:if']
+  displayName: <!-- if ... == ... -->
+  expansion: '<!-- if ${0:value1} == ${1:value2} -->
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['doo:elseif']
+  displayName: <!-- elseif(... == ...) -->
+  expansion: '<!-- elseif(${0:value1} == ${1:value2}) -->
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['doo:else']
+  displayName: <!-- else -->
+  expansion: '<!-- else -->
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['doo:endif']
+  displayName: <!-- endif -->
+  expansion: '<!-- endif -->
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['doo:include']
+  displayName: <!-- include '...' -->
+  expansion: '<!-- include ''${0:Path}'' -->
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['doo:loop']
+  displayName: <!-- loop (...) -->
+  expansion: '<!-- loop ${0:Collection} -->
+
+    {{${1:Collection}'' ${2:Object}.@${3:Property}}}
+
+    <!-- endloop -->
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['doo:placeholder']
+  displayName: <!-- placeholder:(...) -->
+  expansion: '<!-- placeholder:${0:PlaceHolder Name} -->
+
+    <p>No content defined</p>
+
+    <!-- endplaceholder -->
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['doo:value']
+  displayName: '{{value}}'
+  expansion: '{{${0:Value}}}
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['doo:value']
+  displayName: <!-- set ... as ... -->
+  expansion: '<!-- set ${0:ValueName} as ${1:Value} -->
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['doo:value']
+  displayName: <!-- set ... as function(...) -->
+  expansion: '<!-- set ${0:ValueName} as ${1:Function}(${2:Args}) -->
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+copyright: Copyrights 2010-2011 Noritaka Horio All rights reserved
+customProperties: null
+decreaseIndentMarkers: &id001 {}
+description: 'aaa
+
+  '
+displayName: DooPHP
+fileTypeRegistry: *id001
+fileTypes: []
+foldingStartMarkers: *id001
+foldingStopMarkers: *id001
+increaseIndentMarkers: *id001
+license: null
+licenseUrl: null
+path: bundle.rb
+repository: http://sharedhat.com
+visible: true
