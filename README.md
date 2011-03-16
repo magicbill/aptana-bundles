@@ -21,7 +21,7 @@ The downloaded archive is defrosted.
 ### 2. Copy of Bundle
 
 The archive is copied onto USER_DIRECTORY/Aptana Rubles.  
-Referring to https://aptanastudio.tenderapp.com/kb/aptana-studio-configuration/changing-your-user-bundle-path (Changing Your User Bundle Path) when you want to change the installation directory.  
+Referring to [https://aptanastudio.tenderapp.com/kb/aptana-studio-configuration/changing-your-user-bundle-path](Changing Your User Bundle Path) when you want to change the installation directory.  
 Please change the directory. 
 
 ### 3. Completion of installation
@@ -40,4 +40,4 @@ Then, the code is inserted in a present cursor position.
 * *Mootools* - .getElement, .getElements, .inject, etc
 * *Wordpress* - get_header, get_footer, get_sidebar, etc
 
-Please read https://aptanastudio.tenderapp.com/kb/scripting-aptana-studio/ruble-programming-guide (Ruble Programming Guide) in detail.  
+Please read [https://aptanastudio.tenderapp.com/kb/scripting-aptana-studio/ruble-programming-guide](Ruble Programming Guide) in detail.  
