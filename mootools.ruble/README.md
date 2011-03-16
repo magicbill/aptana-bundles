@@ -1,2 +1,2 @@
-Mootools - Aptana3 Bundle Development
-==============================
+Bundle for development of mootools
+=====================================
