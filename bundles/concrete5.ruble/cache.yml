@@ -1,0 +1,171 @@
+!!com.aptana.scripting.model.BundleElement
+author: Noritka Horio<holy.share.design@gmail.com>
+children:
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['Loader::load']
+  displayName: Loader - Form
+  expansion: '$form = Loader::load(''form'');
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['Loader::load']
+  displayName: Loader - Validation
+  expansion: '$validater = Loader::load(''validation/form'');
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['Loader::load']
+  displayName: Loader - HTML
+  expansion: '$html = Loader::load(''html'');
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['Loader::load']
+  displayName: Loader - Navigation
+  expansion: '$navigation = Loader::load(''navigation'');
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['Loader::load']
+  displayName: Loader - Pagination
+  expansion: '$pagination = Loader::load(''pagination'');
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [->action]
+  displayName: Form - Action
+  expansion: '$form->action(''{$1:url}'', ''${2:name}'');
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [->checkbox]
+  displayName: Form - Checkbox
+  expansion: ''
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [->file]
+  displayName: Form - File
+  expansion: '->file(''{$1:file}'');
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [->hidden]
+  displayName: Form - Hidden
+  expansion: '$form->hidden(''flag'', 0);
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+copyright: Copyrights 2010-2011 Noritaka Horio All rights reserved
+customProperties: null
+decreaseIndentMarkers: &id001 {}
+description: 'Concrete5 bundle of open source CMS.
+
+  '
+displayName: Concrete5
+fileTypeRegistry: *id001
+fileTypes: []
+foldingStartMarkers: *id001
+foldingStopMarkers: *id001
+increaseIndentMarkers: *id001
+license: null
+licenseUrl: null
+path: bundle.rb
+repository: http://sharedhat.com
+visible: true
