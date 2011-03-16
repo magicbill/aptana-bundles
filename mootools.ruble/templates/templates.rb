@@ -19,11 +19,11 @@ template "Package Template" do |t|
 end
 
 
-template "Readme Template" do |t|
+template "README Template" do |t|
     t.filetype = "*.md"
     t.invoke do |context|
         ENV['TM_DATE'] = Time.now.strftime("%Y-%m-%d")
-        raw_contents = IO.read("#{ENV['TM_BUNDLE_SUPPORT']}/../templates/readme.js")
+        raw_contents = IO.read("#{ENV['TM_BUNDLE_SUPPORT']}/../templates/README.md")
         raw_contents.gsub(/\$\{([^}]*)\}/) {|match| ENV[match[2..-2]] }
     end
 end

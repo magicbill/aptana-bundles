@@ -1,4 +1,4 @@
-name: Plugin Name
+name: {name}
 
 web: "[http://url_to_plugin](label)"
 
@@ -15,11 +15,11 @@ sources:
 
 author: ${TM_FULLNAME}
 
-category: Interface
+category: {category}
 
-tags: [tag]
+tags: [{tag}, {tag}]
 
-current: version
+current: {version}
 
 docs: http://url_to_plugin_docs
 

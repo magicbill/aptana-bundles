@@ -1,8 +1,8 @@
 /*
 ---
-name: 
+name: {name}
 
-description: 
+description: {description}
 
 license: MIT-style
 
@@ -12,12 +12,15 @@ authors:
 requires:
   - Core/Core
 
-provides: 
+provides: [{provide}]
 
 ...
 */
 
 (function($){
+
+
+
 });
 
 }(document.id));
