@@ -1,46 +1,61 @@
 require 'ruble'
 
-with_defaults :scope => 'text.html source.php.embedded.block.html' do
+with_defaults :scope => 'source.php, text.html source.php.embedded.block.html' do
 
-snippet "Loader - Form" do |snip|
-	snip.trigger = "Loader::load"
+#=================================================
+# Loader
+#=================================================
+
+# form
+#---------------------------------------------
+snippet "Loader::load('form')" do |snip|
+	snip.trigger = "c5:load:form"
 	snip.expansion = <<END
-$form = Loader::load('form');
-END
-
-end
-
-snippet "Loader - Validation" do |snip|
-	snip.trigger = "Loader::load"
-	snip.expansion = <<END
-$validater = Loader::load('validation/form');
-END
-
-end
-
-
-snippet "Loader - HTML" do |snip|
-	snip.trigger = "Loader::load"
-	snip.expansion = <<END
-$html = Loader::load('html');
+${1:$form} = Loader::load('form');
 END
 
 end
 
 
-snippet "Loader - Navigation" do |snip|
-	snip.trigger = "Loader::load"
+# validation/form
+#---------------------------------------------
+snippet "Loader::load('validation/form')" do |snip|
+	snip.trigger = "c5:load:validation"
 	snip.expansion = <<END
-$navigation = Loader::load('navigation');
+${1:$validater} = Loader::load('validation/form');
 END
 
 end
 
 
-snippet "Loader - Pagination" do |snip|
-	snip.trigger = "Loader::load"
+# html
+#---------------------------------------------
+snippet "Loader::load('html')" do |snip|
+	snip.trigger = "c5:load:html"
 	snip.expansion = <<END
-$pagination = Loader::load('pagination');
+${1:$html} = Loader::load('html');
+END
+
+end
+
+
+# navigation
+#---------------------------------------------
+snippet "Loader::load('navigation')" do |snip|
+	snip.trigger = "c5:load:navigation"
+	snip.expansion = <<END
+${1:$navigation} = Loader::load('navigation');
+END
+
+end
+
+
+# pagination
+#---------------------------------------------
+snippet "Loader::load('pagination')" do |snip|
+	snip.trigger = "c5:load:pagination"
+	snip.expansion = <<END
+${1:$pagination} = Loader::load('pagination');
 END
 
 end
@@ -48,134 +63,99 @@ end
 
 
 
-
+#=================================================
+# Form
+#=================================================
 
 #action
-snippet "Form - Action" do |snip|
-	snip.trigger = "->action"
+snippet "$form->action(url, name)" do |snip|
+	snip.trigger = "c5:form:action"
 	snip.expansion = <<END
-$form->action('{$1:url}', '${2:name}');
+${1:$form}->action('${2:url}', '${3:name}');
 END
 
 end
 
 
 #checkbox
-snippet "Form - Checkbox" do |snip|
-	snip.trigger = "->checkbox"
+snippet "$form->checkbox(name, value, checked, attributes)" do |snip|
+	snip.trigger = "c5:form:checkbox"
 	snip.expansion = <<END
+${1:$form}->checkbox('${2:name}', ${3:value}, ${4:checked}, ${5:attributes});
 END
 
 end
 
 
 #file
-snippet "Form - File" do |snip|
-	snip.trigger = "->file"
+snippet "$form->file(filename)" do |snip|
+	snip.trigger = "c5:form:file"
 	snip.expansion = <<END
-->file('{$1:file}');
+${1:$form}->file('${2:filename}');
 END
 
 end
 
 
 #hidden
-snippet "Form - Hidden" do |snip|
-	snip.trigger = "->hidden"
+snippet "$form->hidden(name, value)" do |snip|
+	snip.trigger = "c5:form:hidden"
 	snip.expansion = <<END
-$form->hidden('flag', 0);
+${1:$form}->hidden('${2:name}', ${3:value});
 END
 
 end
 
 
-
-snippet "Form - Label" do |snip|
-	snip.trigger = "->hidden"
+snippet "$form->label(name, label)" do |snip|
+	snip.trigger = "c5:form:label"
 	snip.expansion = <<END
-$form->label('${1:name}', '${2:label}');
+${1:$form}->label('${2:name}', '${3:label}');
 END
 
 end
 
 
-snippet "Form - Password" do |snip|
-	snip.trigger = "->password"
+snippet "$form->password(name, value, attributes)" do |snip|
+	snip.trigger = "c5:form:password"
 	snip.expansion = <<END
-$form->password('{1:name}', '{2:value}', '{3:attributes}');
+${1:$form}->password('${2:name}', {3:value}, {4:attributes});
 END
 
 end
 
 
-snippet "Form - Radio" do |snip|
-	snip.trigger = "->radio"
+snippet "$form->radio(name, value, attributes)" do |snip|
+	snip.trigger = "c5:form:radio"
 	snip.expansion = <<END
-$form->radio('{1:name}', '{2:value}', '{3:attributes}');
+${1:$form}->radio('${2:name}', {3:value}, {4:attributes});
 END
 
 end
 
 
-snippet "Form - Select" do |snip|
-	snip.trigger = "->select"
+snippet "$form->select(name, values, default, attributes)" do |snip|
+	snip.trigger = "c5:form:select"
 	snip.expansion = <<END
-$form->select('{1:name}', '{2:values}', '{3:default}', {4:attributes});
+${1:$form}->select('${2:name}', ${3:values}, ${4:default}, {5:attributes});
 END
 
 end
 
 
-snippet "Form - Submit" do |snip|
-	snip.trigger = "->submit"
+snippet "$form->submit(name, value, attributes)" do |snip|
+	snip.trigger = "c5:form:submit"
 	snip.expansion = <<END
-$form->submit('{1:name}', '{2:value}', {3:attributes});
+${1:$form}->submit('${2:name}', '${3:value}', ${4:attributes});
 END
 
 end
 
 
-snippet "Form - Textarea" do |snip|
-	snip.trigger = "->textarea"
+snippet "$form->textarea(name, value, attributes)" do |snip|
+	snip.trigger = "c5:form:textarea"
 	snip.expansion = <<END
-$form->textarea('{1:name}', '{2:value}', {3:attributes});
-END
-
-end
-
-
-snippet "HTML - CSS" do |snip|
-	snip.trigger = "->css"
-	snip.expansion = <<END
-$html->css('{1:css}', '{2:handleName}');
-END
-
-end
-
-
-snippet "HTML - Image" do |snip|
-	snip.trigger = "->image"
-	snip.expansion = <<END
-$html->image("images/file.png", 160, 100, array("alt" => "image"));
-END
-
-end
-
-
-snippet "HTML - Javascript" do |snip|
-	snip.trigger = "->javascript"
-	snip.expansion = <<END
-$html->javascript('{1:javascript}', '{2:handleName}');
-END
-
-end
-
-
-
-snippet "HTML - Javascript" do |snip|
-	snip.trigger = "->javascript"
-	snip.expansion = <<END
-$html->javascript('{1:javascript}', '{2:handleName}');
+${1:$form}->textarea('${2:name}', '${3:value}', ${4:attributes});
 END
 
 end
@@ -183,121 +163,142 @@ end
 
 
 
-snippet "navigation - getCollectionURL" do |snip|
-	snip.trigger = "->getCollectionURL"
+#=================================================
+# HTML
+#=================================================
+
+snippet "$html->css(css, handle)" do |snip|
+	snip.trigger = "c5:html:css"
 	snip.expansion = <<END
-$navigation->getCollectionURL($page);
+${1:$html}->css('${2:css}', '${3:handle}');
 END
 
 end
 
 
-
-snippet "navigation - getLinkToCollection" do |snip|
-	snip.trigger = "->getLinkToCollection"
+snippet "$html->image(url, width, height, attributes)" do |snip|
+	snip.trigger = "c5:html:image"
 	snip.expansion = <<END
-$navigation->getLinkToCollection($page, "baseurl/");
+${1:$html}->image(${2:url}, ${3:width}, ${4:height}, ${5:attributes});
 END
 
 end
 
 
-
-snippet "navigation - getTrailToCollection" do |snip|
-	snip.trigger = "->getTrailToCollection"
+snippet "$html->javascript(javascript, handle)" do |snip|
+	snip.trigger = "c5:html:javascript"
 	snip.expansion = <<END
-$navigation->getTrailToCollection($page);
+${1:$html}->javascript('${2:javascript}', '${3:handle}');
 END
 
 end
 
 
+#=================================================
+# Navigation
+#=================================================
 
-
-snippet "Paginater - getTrailToCollection" do |snip|
-	snip.trigger = "->paginater"
+snippet "$navigation->getCollectionURL(page)" do |snip|
+	snip.trigger = "c5:navigation:collectionURL"
 	snip.expansion = <<END
-$paginater->init($pageNum, $numResults, "http://example.com/", 15, 'function(page);');
+${1:$navigation}->getCollectionURL(${2:page});
 END
 
 end
 
 
+snippet "$navigation->getLinkToCollection(page, url)" do |snip|
+	snip.trigger = "c5:navigation:getLinkToCollection"
+	snip.expansion = <<END
+${1:$navigation}->getLinkToCollection(${2:page}, ${3:url});
+END
+
+end
+
+
+snippet "$navigation->getTrailToCollection(page)" do |snip|
+	snip.trigger = "c5:navigation:getTrailToCollection"
+	snip.expansion = <<END
+${1:$navigation}->getTrailToCollection(${2:page});
+END
+
+end
+
+
+#=================================================
+# paginater
+#=================================================
+
+snippet "$paginater->init(page, total, url, size, jsfunction)" do |snip|
+	snip.trigger = "c5:paginater:init"
+	snip.expansion = <<END
+${1:$paginater}->init(${2:page}, ${3:total}, ${4:url}, ${5:size}, ${6:jsfunction});
+END
+
+end
+
+
+#=================================================
+# Validater
+#=================================================
 
 #addInteger
-snippet "Form - addInteger" do |snip|
-	snip.trigger = "->addInteger"
+snippet "$validater->addInteger(field, message, empty)" do |snip|
+	snip.trigger = "c5:validater:integer"
 	snip.expansion = <<END
-$validater->addInteger("price", "image upload error.", true);
+${1:$validater}->addInteger(${2:field}, ${3:message}, ${4:empty});
 END
 
 end
 
 
 #addRequired
-snippet "Form - addRequired" do |snip|
-	snip.trigger = "->addRequired"
+snippet "$validater->addRequired(field, message)" do |snip|
+	snip.trigger = "c5:validater:required"
 	snip.expansion = <<END
-$validater->addRequired("uploadFile", "image upload error.");
+${1:$validater}->addRequired(${2:field}, ${3:message});
 END
 
 end
 
 
 #addRequiredEmail
-snippet "Form - addRequiredEmail" do |snip|
-	snip.trigger = "->addRequiredEmail"
+snippet "$validater->addRequiredEmail(field, message)" do |snip|
+	snip.trigger = "c5:validater:email"
 	snip.expansion = <<END
-$validater->addRequiredEmail("email", "email error.");
+${1:$validater}->addRequiredEmail(${2:field}, ${3:message});
 END
 
 end
 
 
 #addRequiredToken
-snippet "Form - addRequiredToken" do |snip|
-	snip.trigger = "->addRequiredToken"
+snippet "$validater->addRequiredToken(value, message)" do |snip|
+	snip.trigger = "c5:validater:token"
 	snip.expansion = <<END
-$validater->addRequiredToken("token", "token is invalid");
+${1:$validater}->addRequiredToken(${2:value}, ${3:message});
 END
 
 end
 
 
 #addUploadedFile
-snippet "Form - addUploadedFile" do |snip|
-	snip.trigger = "->addUploadedFile"
+snippet "$validater->addUploadedFile(field, message, empty)" do |snip|
+	snip.trigger = "c5:validater:file"
 	snip.expansion = <<END
-->addUploadedFile("uploadFile", "file upload error.", true);
+${1:$validater}->addUploadedFile(${2:field}, ${3:message}, ${4:empty});
 END
 
 end
 
 
 #addUploadedImage
-snippet "Form - addUploadedImage" do |snip|
-	snip.trigger = "->addUploadedImage"
+snippet "$validater->addUploadedImage(field, message, empty)" do |snip|
+	snip.trigger = "c5:validater:image"
 	snip.expansion = <<END
-->addUploadedImage("uploadFile", "image upload error.", true);
+${1:$validater}->addUploadedImage(${2:field}, ${3:message}, ${4:empty});
 END
 
 end
-
-
-
-
-
-#$validater->addInteger("price", "image upload error.", true);
-#$validater->addRequired("uploadFile", "image upload error.");
-#$validater->addUploadedFile("uploadFile", "file upload error.", true);
-#$validater->test();
-#$error = $validater->getError();
-#if (error->has()) {
-#$errors = $error->getList();
-#foreach($errors as $e) {
-#"<p>".$e->field.": ".$e->message."</p>";
-#}
-#}
-
 
 end

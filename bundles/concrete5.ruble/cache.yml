@@ -4,9 +4,9 @@ children:
 - !!com.aptana.scripting.model.SnippetElement
   async: false
   customProperties:
-    prefix_values: ['Loader::load']
-  displayName: Loader - Form
-  expansion: '$form = Loader::load(''form'');
+    prefix_values: ['c5:load:form']
+  displayName: Loader::load('form')
+  expansion: '${1:$form} = Loader::load(''form'');
 
     '
   input: [none]
@@ -16,14 +16,14 @@ children:
   outputType: insert_as_snippet
   path: snippets\snippets.rb
   runType: current_thread
-  scope: text.html source.php.embedded.block.html
+  scope: source.php, text.html source.php.embedded.block.html
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
   customProperties:
-    prefix_values: ['Loader::load']
-  displayName: Loader - Validation
-  expansion: '$validater = Loader::load(''validation/form'');
+    prefix_values: ['c5:load:validation']
+  displayName: Loader::load('validation/form')
+  expansion: '${1:$validater} = Loader::load(''validation/form'');
 
     '
   input: [none]
@@ -33,14 +33,14 @@ children:
   outputType: insert_as_snippet
   path: snippets\snippets.rb
   runType: current_thread
-  scope: text.html source.php.embedded.block.html
+  scope: source.php, text.html source.php.embedded.block.html
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
   customProperties:
-    prefix_values: ['Loader::load']
-  displayName: Loader - HTML
-  expansion: '$html = Loader::load(''html'');
+    prefix_values: ['c5:load:html']
+  displayName: Loader::load('html')
+  expansion: '${1:$html} = Loader::load(''html'');
 
     '
   input: [none]
@@ -50,14 +50,14 @@ children:
   outputType: insert_as_snippet
   path: snippets\snippets.rb
   runType: current_thread
-  scope: text.html source.php.embedded.block.html
+  scope: source.php, text.html source.php.embedded.block.html
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
   customProperties:
-    prefix_values: ['Loader::load']
-  displayName: Loader - Navigation
-  expansion: '$navigation = Loader::load(''navigation'');
+    prefix_values: ['c5:load:navigation']
+  displayName: Loader::load('navigation')
+  expansion: '${1:$navigation} = Loader::load(''navigation'');
 
     '
   input: [none]
@@ -67,14 +67,14 @@ children:
   outputType: insert_as_snippet
   path: snippets\snippets.rb
   runType: current_thread
-  scope: text.html source.php.embedded.block.html
+  scope: source.php, text.html source.php.embedded.block.html
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
   customProperties:
-    prefix_values: ['Loader::load']
-  displayName: Loader - Pagination
-  expansion: '$pagination = Loader::load(''pagination'');
+    prefix_values: ['c5:load:pagination']
+  displayName: Loader::load('pagination')
+  expansion: '${1:$pagination} = Loader::load(''pagination'');
 
     '
   input: [none]
@@ -84,14 +84,14 @@ children:
   outputType: insert_as_snippet
   path: snippets\snippets.rb
   runType: current_thread
-  scope: text.html source.php.embedded.block.html
+  scope: source.php, text.html source.php.embedded.block.html
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
   customProperties:
-    prefix_values: [->action]
-  displayName: Form - Action
-  expansion: '$form->action(''{$1:url}'', ''${2:name}'');
+    prefix_values: ['c5:form:action']
+  displayName: $form->action(url, name)
+  expansion: '${1:$form}->action(''${2:url}'', ''${3:name}'');
 
     '
   input: [none]
@@ -101,29 +101,14 @@ children:
   outputType: insert_as_snippet
   path: snippets\snippets.rb
   runType: current_thread
-  scope: text.html source.php.embedded.block.html
+  scope: source.php, text.html source.php.embedded.block.html
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
   customProperties:
-    prefix_values: [->checkbox]
-  displayName: Form - Checkbox
-  expansion: ''
-  input: [none]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: snippets\snippets.rb
-  runType: current_thread
-  scope: text.html source.php.embedded.block.html
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.SnippetElement
-  async: false
-  customProperties:
-    prefix_values: [->file]
-  displayName: Form - File
-  expansion: '->file(''{$1:file}'');
+    prefix_values: ['c5:form:checkbox']
+  displayName: $form->checkbox(name, value, checked, attributes)
+  expansion: '${1:$form}->checkbox(''${2:name}'', ${3:value}, ${4:checked}, ${5:attributes});
 
     '
   input: [none]
@@ -133,14 +118,14 @@ children:
   outputType: insert_as_snippet
   path: snippets\snippets.rb
   runType: current_thread
-  scope: text.html source.php.embedded.block.html
+  scope: source.php, text.html source.php.embedded.block.html
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
   customProperties:
-    prefix_values: [->hidden]
-  displayName: Form - Hidden
-  expansion: '$form->hidden(''flag'', 0);
+    prefix_values: ['c5:form:file']
+  displayName: $form->file(filename)
+  expansion: '${1:$form}->file(''${2:filename}'');
 
     '
   input: [none]
@@ -150,7 +135,420 @@ children:
   outputType: insert_as_snippet
   path: snippets\snippets.rb
   runType: current_thread
-  scope: text.html source.php.embedded.block.html
+  scope: source.php, text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['c5:form:hidden']
+  displayName: $form->hidden(name, value)
+  expansion: '${1:$form}->hidden(''${2:name}'', ${3:value});
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php, text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['c5:form:label']
+  displayName: $form->label(name, label)
+  expansion: '${1:$form}->label(''${2:name}'', ''${3:label}'');
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php, text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['c5:form:password']
+  displayName: $form->password(name, value, attributes)
+  expansion: '${1:$form}->password(''${2:name}'', {3:value}, {4:attributes});
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php, text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['c5:form:radio']
+  displayName: $form->radio(name, value, attributes)
+  expansion: '${1:$form}->radio(''${2:name}'', {3:value}, {4:attributes});
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php, text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['c5:form:select']
+  displayName: $form->select(name, values, default, attributes)
+  expansion: '${1:$form}->select(''${2:name}'', ${3:values}, ${4:default}, {5:attributes});
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php, text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['c5:form:submit']
+  displayName: $form->submit(name, value, attributes)
+  expansion: '${1:$form}->submit(''${2:name}'', ''${3:value}'', ${4:attributes});
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php, text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['c5:form:textarea']
+  displayName: $form->textarea(name, value, attributes)
+  expansion: '${1:$form}->textarea(''${2:name}'', ''${3:value}'', ${4:attributes});
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php, text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['c5:html:css']
+  displayName: $html->css(css, handle)
+  expansion: '${1:$html}->css(''${2:css}'', ''${3:handle}'');
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php, text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['c5:html:image']
+  displayName: $html->image(url, width, height, attributes)
+  expansion: '${1:$html}->image(${2:url}, ${3:width}, ${4:height}, ${5:attributes});
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php, text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['c5:html:javascript']
+  displayName: $html->javascript(javascript, handle)
+  expansion: '${1:$html}->javascript(''${2:javascript}'', ''${3:handle}'');
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php, text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['c5:navigation:collectionURL']
+  displayName: $navigation->getCollectionURL(page)
+  expansion: '${1:$navigation}->getCollectionURL(${2:page});
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php, text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['c5:navigation:getLinkToCollection']
+  displayName: $navigation->getLinkToCollection(page, url)
+  expansion: '${1:$navigation}->getLinkToCollection(${2:page}, ${3:url});
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php, text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['c5:navigation:getTrailToCollection']
+  displayName: $navigation->getTrailToCollection(page)
+  expansion: '${1:$navigation}->getTrailToCollection(${2:page});
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php, text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['c5:paginater:init']
+  displayName: $paginater->init(page, total, url, size, jsfunction)
+  expansion: '${1:$paginater}->init(${2:page}, ${3:total}, ${4:url}, ${5:size}, ${6:jsfunction});
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php, text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['c5:validater:integer']
+  displayName: $validater->addInteger(field, message, empty)
+  expansion: '${1:$validater}->addInteger(${2:field}, ${3:message}, ${4:empty});
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php, text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['c5:validater:required']
+  displayName: $validater->addRequired(field, message)
+  expansion: '${1:$validater}->addRequired(${2:field}, ${3:message});
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php, text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['c5:validater:email']
+  displayName: $validater->addRequiredEmail(field, message)
+  expansion: '${1:$validater}->addRequiredEmail(${2:field}, ${3:message});
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php, text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['c5:validater:token']
+  displayName: $validater->addRequiredToken(value, message)
+  expansion: '${1:$validater}->addRequiredToken(${2:value}, ${3:message});
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php, text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['c5:validater:file']
+  displayName: $validater->addUploadedFile(field, message, empty)
+  expansion: '${1:$validater}->addUploadedFile(${2:field}, ${3:message}, ${4:empty});
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php, text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['c5:validater:image']
+  displayName: $validater->addUploadedImage(field, message, empty)
+  expansion: '${1:$validater}->addUploadedImage(${2:field}, ${3:message}, ${4:empty});
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php, text.html source.php.embedded.block.html
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.ProjectTemplateElement {customProperties: null, description: Project of package of concrete5 theme of open software,
+  displayName: Concrete5 - Theme package project, location: 'git@github.com:holyshared/concrete5-theme-project.git',
+  path: templates\project_templates.rb, scope: null, type: WEB}
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: Default template
+  filetype: '*.php'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates\templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: Full width template
+  filetype: '*.php'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates\templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: Left sidebar template
+  filetype: '*.php'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates\templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: Header template
+  filetype: '*.php'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates\templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: Footer template
+  filetype: '*.php'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates\templates.rb
+  runType: current_thread
+  scope: null
   workingDirectoryType: UNDEFINED
 copyright: Copyrights 2010-2011 Noritaka Horio All rights reserved
 customProperties: null
