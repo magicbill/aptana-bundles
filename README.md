@@ -10,6 +10,7 @@ The included bundle is as follows.
 * jQuery
 * Mootools
 * Wordpress
+* Concrete5
 
 Method of installation
 ----------------------------------------------
@@ -21,8 +22,11 @@ The downloaded archive is defrosted.
 ### 2. Copy of Bundle
 
 The archive is copied onto USER_DIRECTORY/Aptana Rubles.  
-Referring to [Changing Your User Bundle Path](https://aptanastudio.tenderapp.com/kb/aptana-studio-configuration/changing-your-user-bundle-path) when you want to change the installation directory.  
+Referring to [Changing Your User Bundle Path](https://aptanastudio.tenderapp.com/kb/aptana-studio-configuration/changing-your-user-bundle-path) when you want to change the installation directory. 
 Please change the directory. 
+
+	*AptanaStudio3.ini*
+	-Daptana.ruble.user.location=path/to/aptana-bundles/bundles
 
 ### 3. Completion of installation
 
@@ -39,5 +43,6 @@ Then, the code is inserted in a present cursor position.
 * *jQuery* - .attr, .css, .html, etc
 * *Mootools* - .getElement, .getElements, .inject, etc
 * *Wordpress* - get_header, get_footer, get_sidebar, etc
+* *Concrete5* - c5:load, c5:text, c5:textarea, etc
 
 Please read [Ruble Programming Guide](https://aptanastudio.tenderapp.com/kb/scripting-aptana-studio/ruble-programming-guide) in detail.  
